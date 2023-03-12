@@ -1,10 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Text, View } from "react-native";
+import LittleLemonHeader from "./components/LittleLemonHeader";
+import Footer from "./components/Footer";
+import Poster from "./components/Poster";
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Welcome to ReactNativeApp!</Text>
+      <LittleLemonHeader />
+      <Poster />
+      <Footer />
     </View>
   );
 }
@@ -12,8 +16,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: "100%",
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
